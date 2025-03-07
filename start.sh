@@ -4,7 +4,7 @@
 pm2 start email_smtp_api.py --name "email-auto" --interpreter python
 
 # Start ngrok with PM2
-pm2 start --name "ngrok-email-auto" -- ngrok http --url=firefly-winning-dragon.ngrok-free.app 7000
+pm2 start "ngrok http --url=firefly-winning-dragon.ngrok-free.app 7000" --name ngrok-email-auto
 
 # Save PM2 configuration
 pm2 save
