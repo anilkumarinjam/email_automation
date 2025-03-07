@@ -7,7 +7,7 @@ python email_smtp_api.py &
 FLASK_PID=$!
 
 # Start ngrok for port 6000 in the background
-ngrok http --url=firefly-winning-dragon.ngrok-free.app 6000 &
+ngrok http --url=firefly-winning-dragon.ngrok-free.app 7000 &
 
 # Store the ngrok PID
 NGROK_PID=$!
